@@ -1,0 +1,32 @@
+# Student Service - Lấy cấu hình từ Config Server
+
+# Cấu hình kết nối tới Config Server
+spring:
+  application:
+    name: students
+  config:
+    import: optional:configserver:http://localhost:8888
+
+# ===== Các cấu hình bên dưới đã được chuyển sang Config Server =====
+# Nếu muốn override, bỏ comment và chỉnh sửa
+
+#server:
+#  port: 8090
+#
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/students
+#    username: csdl_longsama
+#    password: 12345
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    database: mysql
+#    database-platform: org.hibernate.dialect.MySQLDialect
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka

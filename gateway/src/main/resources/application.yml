@@ -1,0 +1,38 @@
+# API Gateway - Lấy cấu hình từ Config Server
+
+# Cấu hình kết nối tới Config Server
+spring:
+  application:
+    name: gateway
+  config:
+    import: optional:configserver:http://localhost:8888
+
+# ===== Các cấu hình bên dưới đã được chuyển sang Config Server =====
+# Nếu muốn override, bỏ comment và chỉnh sửa
+
+#server:
+#  port: 8222
+#
+#spring:
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
+#
+#      routes:
+#        - id: students
+#          uri: lb://students  # lb = load balancer qua Eureka
+#          predicates:
+#            - Path=/api/v1/students/**
+#
+#        - id: schools
+#          uri: lb://schools  # lb = load balancer qua Eureka
+#          predicates:
+#            - Path=/api/v1/schools/**
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka

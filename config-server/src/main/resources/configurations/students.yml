@@ -1,0 +1,26 @@
+# Cấu hình cho Student Service
+server:
+  port: 8090
+
+spring:
+  application:
+    name: students
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/students
+    username: csdl_longsama
+    password: 12345
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true

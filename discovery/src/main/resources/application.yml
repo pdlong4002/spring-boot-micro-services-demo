@@ -1,0 +1,24 @@
+# Eureka Discovery Server - Lấy cấu hình từ Config Server
+
+# Cấu hình kết nối tới Config Server
+spring:
+  application:
+    name: discovery
+  config:
+    import: optional:configserver:http://localhost:8888
+
+# ===== Các cấu hình bên dưới đã được chuyển sang Config Server =====
+# Nếu muốn override, bỏ comment và chỉnh sửa
+
+#server:
+#  port: 8761
+#
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
