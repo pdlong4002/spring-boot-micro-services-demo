@@ -125,8 +125,8 @@ CREATE DATABASE students;
 CREATE DATABASE schools;
 
 -- Kiểm tra user
--- username: csdl_longsama
--- password: 12345
+-- username: yourdatabase
+-- password: yourpassword
 ```
 
 ## 🚀 Khởi động hệ thống
