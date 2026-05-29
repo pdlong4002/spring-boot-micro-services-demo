@@ -1,4 +1,4 @@
-# 🎓 Spring Boot Microservices - Demo
+# 🎓 Spring Boot Microservices - demo
 
 ## 📋 Tổng quan
 
