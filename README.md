@@ -43,7 +43,7 @@ Dự án minh họa kiến trúc microservices hoàn chỉnh với 5 services đ
                   └───────────────┘
 ```
 
-## 🚀 Công nghệ & Giải thích
+## 🚀 Công nghệ & Giải thích.
 
 ### Core Framework
 - **Spring Boot 4.0.3** - Framework chính để xây dựng các microservices
